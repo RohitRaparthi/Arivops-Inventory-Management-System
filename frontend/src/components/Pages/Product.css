@@ -1,0 +1,113 @@
+.products-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.products-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.products-header h1 {
+  margin: 0;
+  color: #1e293b;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.products-header p {
+  margin-top: 6px;
+  color: #64748b;
+}
+
+.products-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* ===========================
+   Stock Badge
+=========================== */
+
+.stock-badge {
+  display: inline-block;
+  min-width: 70px;
+  padding: 6px 12px;
+  text-align: center;
+  border-radius: 20px;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.stock-badge.green {
+  background: #22c55e;
+}
+
+.stock-badge.amber {
+  background: #f59e0b;
+}
+
+.stock-badge.red {
+  background: #ef4444;
+}
+
+/* ===========================
+   Action Buttons
+=========================== */
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width: 992px) {
+  .products-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .products-actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .products-page {
+    gap: 16px;
+  }
+
+  .products-header h1 {
+    font-size: 24px;
+  }
+
+  .products-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .products-actions > * {
+    width: 100%;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+
+  .stock-badge {
+    min-width: 60px;
+    font-size: 12px;
+  }
+}
