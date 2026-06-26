@@ -7,7 +7,7 @@ function StockMovement({ product, onClose, onRefresh }) {
     notes: '',
   });
 
-  const API_URL = 'http://localhost:5000/api';
+  const API_URL = 'https://arivops-inventory-management-system.onrender.com/api';
 
   const handleChange = (e) => {
     const { name, value } = e.target;

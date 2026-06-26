@@ -4,7 +4,7 @@ import OrderForm from "./OrderForm";
 
 function Orders() {
 
-  const API_URL = "http://localhost:5000/api/orders";
+  const API_URL = "https://arivops-inventory-management-system.onrender.com/api/orders";
 
   const [orders, setOrders] = useState([]);
 
@@ -112,7 +112,7 @@ function Orders() {
 
       const response =
         await fetch(
-          `http://localhost:5000/api/invoices/${id}/pdf`,
+          `https://arivops-inventory-management-system.onrender.com/api/invoices/${id}/pdf`,
           {
             headers: {
               Authorization:
@@ -160,7 +160,7 @@ function Orders() {
 
       const response =
         await fetch(
-          "http://localhost:5000/api/export/orders",
+          "https://arivops-inventory-management-system.onrender.com/api/export/orders",
           {
             headers: {
               Authorization:

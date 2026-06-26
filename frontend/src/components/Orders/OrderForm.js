@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 function OrderForm({ editingOrder, onClose, onRefresh }) {
-  const API_URL = "http://localhost:5000/api";
+  const API_URL = "https://arivops-inventory-management-system.onrender.com/api";
 
   const [customers, setCustomers] = useState([]);
   const [products, setProducts] = useState([]);

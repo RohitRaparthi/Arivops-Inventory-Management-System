@@ -22,7 +22,7 @@ function App() {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [editingProduct, setEditingProduct] = useState(null);
 
-  const API_URL = 'http://localhost:5000/api';
+  const API_URL = 'https://arivops-inventory-management-system.onrender.com/api';
 
   // Check if user is already logged in
   useEffect(() => {

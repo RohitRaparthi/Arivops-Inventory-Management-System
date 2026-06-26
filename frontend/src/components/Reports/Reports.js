@@ -4,7 +4,7 @@ import "./Reports.css";
 function Reports() {
 
   const API_URL =
-    "http://localhost:5000/api/reports";
+    "https://arivops-inventory-management-system.onrender.com/api/reports";
 
   const [report, setReport] =
     useState(null);

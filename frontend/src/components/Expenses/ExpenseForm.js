@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 function ExpenseForm({ editingExpense, onClose, onRefresh }) {
-  const API_URL = "http://localhost:5000/api/expenses";
+  const API_URL = "https://arivops-inventory-management-system.onrender.com/api/expenses";
 
   const [formData, setFormData] = useState({
     category: "",

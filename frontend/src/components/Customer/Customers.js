@@ -9,7 +9,7 @@ function Customers() {
   const [editingCustomer, setEditingCustomer] = useState(null);
   
 
-  const API_URL = "http://localhost:5000/api/customers";
+  const API_URL = "https://arivops-inventory-management-system.onrender.com/api/customers";
 
   useEffect(() => {
     fetchCustomers();

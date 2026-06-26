@@ -11,7 +11,7 @@ function ProductForm({ onClose, editingProduct, onRefresh }) {
     sellingPrice: 0,
   });
 
-  const API_URL = 'http://localhost:5000/api';
+  const API_URL = 'https://arivops-inventory-management-system.onrender.com/api';
 
   useEffect(() => {
     if (editingProduct) {

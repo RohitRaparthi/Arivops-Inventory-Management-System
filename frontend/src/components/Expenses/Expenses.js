@@ -5,7 +5,7 @@ import ExpenseForm from "./ExpenseForm";
 function Expenses() {
 
   const API_URL =
-    "http://localhost:5000/api/expenses";
+    "https://arivops-inventory-management-system.onrender.com/api/expenses";
 
   const [expenses, setExpenses] =
     useState([]);
@@ -123,7 +123,7 @@ function Expenses() {
       const response =
         await fetch(
 
-          "http://localhost:5000/api/export/expenses",
+          "https://arivops-inventory-management-system.onrender.com/api/export/expenses",
 
           {
 

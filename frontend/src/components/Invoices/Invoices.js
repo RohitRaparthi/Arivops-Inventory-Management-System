@@ -4,7 +4,7 @@ import "./Invoices.css";
 function Invoices() {
 
   const API_URL =
-    "http://localhost:5000/api/invoices";
+    "https://arivops-inventory-management-system.onrender.com/api/invoices";
 
   const [invoices, setInvoices] =
     useState([]);
@@ -74,7 +74,7 @@ function Invoices() {
 
       const response =
         await fetch(
-          "http://localhost:5000/api/export/invoices",
+          "https://arivops-inventory-management-system.onrender.com/api/export/invoices",
           {
 
             headers: {

@@ -16,7 +16,7 @@ function Login({ onLoginSuccess }) {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
-  const API_URL = 'http://localhost:5000/api/auth';
+  const API_URL = 'https://arivops-inventory-management-system.onrender.com/api/auth';
 
   const handleLoginChange = (e) => {
     const { name, value } = e.target;
