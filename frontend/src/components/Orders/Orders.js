@@ -376,7 +376,7 @@ filteredOrders.map((order) => (
 <td>{order.orderNumber}</td>
 
 <td>
-{order.customer.customerName}
+{order.customer?.customerName || "Unknown Customer"}
 </td>
 
 <td>
